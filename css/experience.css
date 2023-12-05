@@ -1,0 +1,21 @@
+table {
+    padding: 24px;
+    width: 100%;
+}
+table, th, td {
+    border: solid 3px #05386B;
+    border-collapse: collapse;
+    padding: 0 12px;
+}
+
+.education {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}

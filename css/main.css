@@ -1,0 +1,12 @@
+.intro, .skills{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid #05386B;
+}
+.portrait {
+    border-style: solid;
+    border-color: #05386B;
+    align-self: center;
+    max-width: 300px;
+    min-width: 100px;
+}
