@@ -60,11 +60,11 @@ function recalculate(value){
     - if modelName is currently "CPRG", change the value of modelName to "XYZ", and change the innerHTML of the model-text span element to "Model XYZ"
     - then, recalculate() the total cost.
 - finally, uncomment the following line of JavaScript to have this function run automatically whenever the pseudo-button is clicked: */
-modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 
 modelbutton = document.getElementById("model-button");
+modelButton.addEventListener("click", changeModel);
 
 function changeModel(){
     if (modelName == 'XYZ'){
