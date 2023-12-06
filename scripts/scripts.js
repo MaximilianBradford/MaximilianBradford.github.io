@@ -91,8 +91,8 @@ function changeModel(){
 */
 
 // INSERT YOUR CODE HERE
-durationButton.addEventListener("click", changedur);
 durationButton = document.getElementById("duration-button")
+durationButton.addEventListener("click", changedur);
 durationtext = document.getElementById("duration-text")
 
 function changedur(){
