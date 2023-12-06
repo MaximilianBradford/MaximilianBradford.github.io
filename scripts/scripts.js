@@ -10,7 +10,8 @@ You are encouraged to use the provided naming convention for ease of review.
 /* create variables to hold the values for modelName and duration */
 
 // INSERT YOUR CODE HERE
-
+let modelName = ('XYZ');
+let duration = 0;
 
 
 
@@ -27,6 +28,23 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
+let costLabel = document.getElementById("calculated-cost");
+let model = document.getElementById("model-text");
+
+function recalculate(value){
+    if (model == ('Model XYZ')){
+        cost = (value*100);
+        costLabel.innerHTML = cost;
+        return cost
+    } else {
+        cost = (value*213);
+        costLabel.innerHTML = cost;
+        return cost
+    }
+}
+
+
+
 
 
 
@@ -42,12 +60,21 @@ You are encouraged to use the provided naming convention for ease of review.
     - if modelName is currently "CPRG", change the value of modelName to "XYZ", and change the innerHTML of the model-text span element to "Model XYZ"
     - then, recalculate() the total cost.
 - finally, uncomment the following line of JavaScript to have this function run automatically whenever the pseudo-button is clicked: */
-    // modelButton.addEventListener("click", changeModel);
+modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 
+modelbutton = document.getElementById("model-button");
 
-
+function changeModel(){
+    if (modelName == 'XYZ'){
+        modelName = "Model CPRG"
+        model.innerHTML = "Model CPRG"
+    }else{
+        modelName = "Model XYZ"
+        model.innerHTML = "Model XYZ"
+    }
+}
 
 
 
@@ -64,6 +91,14 @@ You are encouraged to use the provided naming convention for ease of review.
 */
 
 // INSERT YOUR CODE HERE
+durationButton.addEventListener("click", changedur);
+durationButton = document.getElementById("duration-button")
+durationtext = document.getElementById("duration-text")
 
-
-
+function changedur(){
+    let duration = Number(prompt("Please enter the rental period(days)", "1"))
+    if (duration != null){
+        durationtext.innerHTML = ({duration})
+        recalculate(duration)
+    }
+}
