@@ -33,13 +33,13 @@ let model = document.getElementById("model-text");
 
 function recalculate(value){
     if (modelName == ('XYZ')){
-        cost = (value*100);
+        let cost = (value*100);
         costLabel.innerHTML = cost;
-        return cost
+        return cost;
     } else {
-        cost = (value*213);
+        let cost = (value*213);
         costLabel.innerHTML = cost;
-        return cost
+        return cost;
     }
 }
 
@@ -64,13 +64,13 @@ modelButton.addEventListener("click", changeModel);
 // INSERT YOUR CODE HERE
 function changeModel(){
     if (modelName == 'XYZ'){
-        modelName = "CPRG"
-        model.innerHTML = "Model CPRG"
-        recalculate(duration)
+        modelName = "CPRG";
+        model.innerHTML = "Model CPRG";
+        recalculate(duration);
     }else{
-        modelName = "XYZ"
-        model.innerHTML = "Model XYZ"
-        recalculate(duration)
+        modelName = "XYZ";
+        model.innerHTML = "Model XYZ";
+        recalculate(duration);
     }
 }
 
@@ -90,14 +90,14 @@ function changeModel(){
 */
 
 // INSERT YOUR CODE HERE
-let durationButton = document.getElementById("duration-button")
+let durationButton = document.getElementById("duration-button");
 durationButton.addEventListener("click", changedur);
-let durationtext = document.getElementById("duration-text")
+let durationtext = document.getElementById("duration-text");
 
 function changedur(){
-    duration = prompt("Please enter the rental period(days)", "1")
+    duration = prompt("Please enter the rental period(days)", "1");
     if (duration != null){
-        durationtext.innerHTML = (duration)
-        recalculate(Number(duration))
+        durationtext.innerHTML = (duration);
+        recalculate(Number(duration));
     }
 }
