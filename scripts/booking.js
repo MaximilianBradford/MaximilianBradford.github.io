@@ -23,9 +23,6 @@ const list = [monday, tuesday, wednesday, thursday, friday];
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 // document.addEventListener("DOMContentLoaded", function(event) {
-    
-
-
 
 monday.addEventListener('click', function(){
     monday.classList.add("clicked")
