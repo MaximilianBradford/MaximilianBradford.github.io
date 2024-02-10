@@ -9,6 +9,10 @@ main .awards, .activites  {
     flex-direction: column;
     
 }
+main .awards, .photo1, .activites, .photo2{
+    padding: 20px;
+    background-color: rgba(224, 226, 219, 0.7);;
+}
 .activites dt {
     text-decoration: underline;
     margin-bottom: 15px
@@ -16,9 +20,9 @@ main .awards, .activites  {
 .awards dt {
     text-decoration: underline;
 }
-main .photo2 {
+/* main .photo2 {
     border-bottom: solid #05386B;
-}
+} */
 .photo2, .photo1 {
     display: flex;
     flex-direction: row;

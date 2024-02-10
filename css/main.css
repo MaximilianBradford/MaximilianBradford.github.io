@@ -1,12 +1,20 @@
 .intro, .skills{
     display: flex;
     flex-direction: column;
-    border-bottom: solid #05386B;
+    /* border-bottom: solid #191716; */
+    background-color: rgba(224, 226, 219, 0.7);
+    padding: 20px;
 }
 .portrait {
     border-style: solid;
-    border-color: #05386B;
+    border-color: #191716;
     align-self: center;
     max-width: 300px;
     min-width: 100px;
+}
+.intro{
+    padding-bottom: 0;
+}
+.skills{
+    padding-top: 0;
 }

@@ -2,6 +2,7 @@ main h2 {
     text-decoration: underline;
 }
 
-section{
-    border-bottom: solid #05386B;
+.Info{
+    background-color: rgba(224, 226, 219, 0.7);
+    padding: 20px;
 }

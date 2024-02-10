@@ -3,7 +3,8 @@ table {
     width: 100%;
 }
 table, th, td {
-    border: solid 3px #05386B;
+    border: solid 3px #191716;
+    background-color: rgba(224, 226, 219, 0.7);
     border-collapse: collapse;
     padding: 0 12px;
 }
